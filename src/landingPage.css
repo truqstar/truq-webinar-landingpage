@@ -1,0 +1,108 @@
+/* *{
+    margin:0px;
+    padding:0px
+} */
+.form-container {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    width: 70vw;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 3px;
+  }
+  
+  .image {
+    width: 60vw;
+    height: 35vmin;
+    pointer-events: none;
+  }
+
+  h1{
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  h2{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  p{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+  .det, .para2, .para3, .para4{
+    margin-top: 10px;
+  }
+
+  ul{
+   /* width: fit-content; */
+   display: inline-block;
+  }
+
+   .lastitem{
+    width: fit-content;
+  }
+
+  input{
+    margin-top: 10px;
+    height: 30px;
+    width: 60%;
+  }
+
+  .submit{
+    border-radius: 3px;
+    margin-top: 10px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    font-size: 20px;
+    width: 30%;
+    height: 25px;
+    margin-bottom: 3px;
+    cursor: pointer;
+  }
+
+  .submit:hover{
+    background-color: grey;
+  }
+
+  .error{
+    color: red;
+  }
+  @media screen and (max-width: 900px){
+     .form-container{
+        width: 80%;
+     }  
+     
+     input{
+        width: 70%
+    }
+
+    .submit{
+        width: 35%;
+    }
+  }
+
+  @media screen and (max-width: 700px){
+    .form-container{
+       width: 100%;
+    }
+
+    li{
+        width: fit-content;
+    }
+    input{
+        width: 80%
+    }
+
+    .submit{
+        width: 40%;
+    }
+ }
