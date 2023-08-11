@@ -49,8 +49,11 @@ function landingPage(props) {
                 <input type='email' name='email' onChange={props.data}/>
                 {props.errors.email && <div className='error'>{props.errors.email}</div>}
            </div>
-
-           <button className='submit' id='btn' type='submit' disabled={props.disable}>Save My Spot</button>
+            <br/>
+            <div className='formgroup'>
+                 <button className='submit' id='btn' type='submit' disabled={props.disable}>Save My Spot</button>
+            </div>
+           
 
         
     </form>
