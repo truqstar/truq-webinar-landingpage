@@ -47,9 +47,9 @@ function landingPage(props) {
                 <label htmlFor='email'>Email:</label><br/>
                 <input type='email' name='email' onChange={props.email}/>
                 {props.errors.email && <div className='error'>{props.errors.email}</div>}
-
-                <button className='submit' id='btn' type='submit'>Save My Spot</button>
            </div>
+
+           <button className='submit' id='btn' type='submit'>Save My Spot</button>
 
         
     </form>
