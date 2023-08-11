@@ -2,6 +2,7 @@ import React from 'react';
 import './landingPage.css'
 import webinar from './Assets/Webinar-Banner.png';
 
+
 function landingPage(props) {
     
   return (
@@ -39,17 +40,17 @@ function landingPage(props) {
 
             <div className='formgroup'>
                 <label htmlFor='name'>Name:</label><br/>
-                <input type='text' name='name' onChange={props.name}/>
+                <input type='text' name='name' onChange={props.data}/>
                 {props.errors.name && <div className='error'>{props.errors.name}</div>}
             </div>
             <br/>
            <div className='formgroup'>
                 <label htmlFor='email'>Email:</label><br/>
-                <input type='email' name='email' onChange={props.email}/>
+                <input type='email' name='email' onChange={props.data}/>
                 {props.errors.email && <div className='error'>{props.errors.email}</div>}
            </div>
 
-           <button className='submit' id='btn' type='submit'>Save My Spot</button>
+           <button className='submit' id='btn' type='submit' disabled={props.disable}>Save My Spot</button>
 
         
     </form>

@@ -1,18 +1,8 @@
-/* *{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    overflow-y:"scroll"
-} */
-
 
 .form-container {
     justify-self: center;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* text-align: center; */
     border-radius: 10px;
-    /* border: 1px solid black; */
     width: 60%;
-    /* align-items: center; */
     justify-content: space-around;
     background-color: white;
     margin-top: 60px;
@@ -29,11 +19,9 @@
   
   .imgcontainer{
     width: 100%;
-    /* height: 1200px; */
     margin: 70px 0;
   }
   .image {
-    /* padding-top: 110px; */
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -70,14 +58,11 @@
 
   .section2{
     display: block; 
-    /* flex-direction: column; */
-    /* text-align: center; */
     font-size: 20px;
     margin-top: 10px;
   }
 
   .section2 ul{
-    /* border: 1px solid black; */
     align-self: center;
     margin-left: 120px;
   }
@@ -92,11 +77,6 @@
     font-weight: bold;
     text-align: center;
   }
-
-
-   /* .lastitem{
-    width: fit-content;
-  } */
 
   form{
     display: block;
@@ -133,27 +113,12 @@
 
   .form-group,  .submit:hover{
     background-color: #1d45b3;
-  }
-  
-
-  /* .submit{
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-left: 40px;
-     margin-bottom: 3px; 
-  } */
+  } 
 
   .error{
     color: red;
   }
-  @media screen and (max-width: 1200px){
-    /* *{
-        overflow-y: 'scroll';
-    } */
-     /* .form-container{
-        width: 80%;
-     }  */
-      
+  @media screen and (max-width: 1200px){    
      input{
       width: 80%;
       margin-left: -20px;
@@ -173,14 +138,7 @@
   }
   }
 
-  @media screen and (max-width: 900px){
-    /* *{
-        overflow-y: 'scroll';
-    } */
-     /* .form-container{
-        width: 80%;
-     }  */
-      
+  @media screen and (max-width: 900px){      
       .section2 ul{
         text-align: start
       }
@@ -200,10 +158,6 @@
   }
 
   @media screen and (max-width: 700px){
-    /* *{
-        overflow-y: 'scroll';
-    } */
-
     .form-container{
        width: 100%;
     }
