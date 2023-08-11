@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import LandingPage from './landingPage';
 import { useState } from 'react';
+import { Fragment } from 'react';
 
 function App() {
   const [name, setName] = useState('')
@@ -47,9 +48,18 @@ function App() {
       setEmail(event.target.value)
     }
   return (
+    <Fragment>
     <div className="container">
       <LandingPage submit={handleSubmit} name={saveName} email= {saveEmail} errors={errors}/>
     </div>
+
+    <div className='footer'>
+      <p> 
+        Copyright © {new Date().getFullYear()} <a href='https://www.truq.it/'>Siju by truQ</a>. All right reserved
+      </p>
+    </div>
+    
+    </Fragment>
   );
 }
 
