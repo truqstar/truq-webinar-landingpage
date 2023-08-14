@@ -65,7 +65,7 @@ const LandingPage = () => {
       setFormData({name: '', email: ''});
       setLoading(false);
     }).catch(err => {
-      const error = (err && err.response && err.response.data && err.response.data.message) ? err.response.data.message : "Cannot handle this request at the moment orSubscriber email already exists.";
+      const error = (err && err.response && err.response.data && err.response.data.message) ? err.response.data.message : "Cannot handle this request at the moment or Subscriber email already exists.";
       toast.error(error);
       setLoading(false);
     });
