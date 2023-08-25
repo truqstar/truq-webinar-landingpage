@@ -33,7 +33,7 @@ const LandingPage = () => {
         error.name = false;
         errorMgs.name = null;
       }
-    } else {
+    } else if (event.target.name === "email"){
       if (!formData.email) {
         error.email = true;
         errorMgs.email = "Email is required";
@@ -46,7 +46,28 @@ const LandingPage = () => {
         error.email = false;
         errorMgs.email = null;
       }
-    }
+    } 
+    
+    // else if(event.target.name === "company"){
+    //   if (!formData.company || formData.company.length < 1) {
+    //     error.company = true;
+    //     errorMgs.company = "Company name is Required";
+    //   }
+    //   else {
+    //     error.company = false;
+    //     errorMgs.company = null;
+    //   }
+    // }else {
+    //   if (!formData.title || formData.company.length < 1) {
+    //     error.title = true;
+    //     errorMgs.title = "Job Title  is Required";
+    //   }
+    //   else {
+    //     error.title = false;
+    //     errorMgs.title = null;
+    //   }
+    // }
+  
 
     setErrors(error);
     setErrorMessages(errorMgs);
@@ -78,15 +99,15 @@ const LandingPage = () => {
         <div className='imgcontainer'>
           <img src={webinar} className="image" alt="webinar-img" loading="eager"/>
         </div>
-        <h1>Step into the future with us!</h1>
-        <h2>We are optimising the Logistics Operations in Africa.</h2>
-        <h2>Join the Conversation!</h2>
+        <h1>Let's journey into the future together</h1>
+        <h2>We are all intelligent enough to revolutionize logistics in Africa</h2>
+        <h2>Let us discuss!</h2>
         <div className='det'>
           <p>Date: Wednesday, 30th August 2023 <br/>
             Time: 2 PM<br/>
             Venue: Google Meet</p>
         </div>
-        <p className='para2'>Discover the Future of Third-Party Logistics at Optimise 1.0</p>
+        <p className='para2'>Let us craft the future of Third-Party Logistics at Optimise 1.0</p>
 
         <p className='para3'>What to expect?</p>
       </section>
@@ -114,6 +135,18 @@ const LandingPage = () => {
           <input type='text' name='email' onChange={handleChange} value={formData.email}/>
           {(errors.email && errorMessages.email) && <div className='error'>{errorMessages.email}</div>}
         </div>
+        {/* <br/>
+        <div className='formgroup'>
+          <label htmlFor='company'>Company:</label><br/>
+          <input type='text' name='company' onChange={handleChange} value={formData.company}/>
+          {(errors.company && errorMessages.company) && <div className='error'>{errorMessages.company}</div>}
+        </div>
+        <br/>
+        <div className='formgroup'>
+          <label htmlFor='title'>Job Title:</label><br/>
+          <input type='text' name='title' onChange={handleChange} value={formData.title}/>
+          {(errors.title && errorMessages.title) && <div className='error'>{errorMessages.title}</div>}
+        </div> */}
         <br/>
         <div className='formgroup'>
           <button className='submit' id='btn' type='submit' disabled={isInvalid}>
